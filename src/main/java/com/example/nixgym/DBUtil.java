@@ -8,7 +8,7 @@ public final class DBUtil {
     private static boolean isDriverLoaded = false;
     static{
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Driver Loaded");
             isDriverLoaded = true;
         }catch(ClassNotFoundException e){
