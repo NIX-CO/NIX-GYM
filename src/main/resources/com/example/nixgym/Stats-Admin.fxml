@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="511.0" prefWidth="1082.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nixgym.StatsAdmin">
+   <children>
+      <PieChart fx:id="pieChartClients" layoutX="750.0" layoutY="86.0" prefHeight="404.0" prefWidth="337.0" />
+      <Label layoutX="890.0" layoutY="80.0" text="Client">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieChartMaterial" layoutX="378.0" layoutY="113.0" prefHeight="398.0" prefWidth="363.0" />
+      <Label layoutX="519.0" layoutY="80.0" text="Material">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieChartCA" layoutX="14.0" layoutY="113.0" prefHeight="398.0" prefWidth="363.0" />
+      <Label layoutX="412.0" layoutY="14.0" text="STATISTIQUES" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="80.0" text="Chiffre d'affaire">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="showdeta" layoutX="953.0" layoutY="28.0" mnemonicParsing="false" onAction="#showdetaclick" prefHeight="25.0" prefWidth="120.0" text="Show More details" />
+   </children>
+</AnchorPane>

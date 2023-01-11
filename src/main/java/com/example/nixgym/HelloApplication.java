@@ -21,17 +21,17 @@ public class HelloApplication extends Application {
     }
 
     public static void main(String[] args) {
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            String connectionUrl = "jdbc:mysql://localhost:3306/nixgym";
-            Connection connection = DriverManager.getConnection(
-                    connectionUrl,"root",""
-            );
-            Statement statement = connection.createStatement();
-            connection.close();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+//        try {
+//            Class.forName("com.mysql.jdbc.Driver");
+//            String connectionUrl = "jdbc:mysql://localhost:3306/nixgym";
+//            Connection connection = DriverManager.getConnection(
+//                    connectionUrl,"root",""
+//            );
+//            Statement statement = connection.createStatement();
+//            connection.close();
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
         launch();
     }
 }
