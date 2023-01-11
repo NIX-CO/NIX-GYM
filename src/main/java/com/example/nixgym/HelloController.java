@@ -56,7 +56,7 @@ public class HelloController {
                     stage.show();
                 }
                 if(rs.getString(1).equals("Admin")){
-                    FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Stats-Admin.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("respo.fxml"));
                     Parent root2 = (Parent) fxmlLoader.load();
                     Stage stage = new Stage();
                     stage.setTitle("Admin Dashboard");
