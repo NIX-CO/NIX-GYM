@@ -110,7 +110,7 @@ public class ResponsableDashboard {
                 RespodataGridviewpassword.setCellValueFactory(new PropertyValueFactory<Resposable,  String>("password"));
                 RespodataGridviewis_Active.setCellValueFactory(new PropertyValueFactory<Resposable, Integer>("is_Active"));
                 ObservableList< Resposable> data = FXCollections.observableArrayList(
-                        new Resposable(rs.getInt("id"),rs.getString("nom"),rs.getString("prenom"),rs.getString("email"),rs.getString("username"),rs.getString("password"),rs.getInt("is_Active"))
+                        new Resposable(rs.getInt("id"),rs.getString("nom"),rs.getString("prenom"),rs.getString("email"),rs.getString("username"),rs.getInt("is_Active"))
                 );
                 RespodataGridview.getItems().addAll(data);
             }
