@@ -8,19 +8,21 @@ public class Resposable {
     String password;
     String email;
     int is_active;
+    String role ;
 
 
-
-    public Resposable(int ID, String nom, String prenom, String username, String password, String email,int is_active) {
+    public Resposable(int ID, String username, String nom, String prenom, String email, int is_active) {
         this.ID = ID;
         this.nom = nom;
         this.prenom = prenom;
         this.username = username;
-        this.password = password;
         this.email = email;
         this.is_active = is_active;
     }
 
+    public Resposable() {
+
+    }
 
 
     public int getID() {
@@ -77,5 +79,12 @@ public class Resposable {
 
     public void setIs_active(int is_active) {
         this.is_active = is_active;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+    public String getRole() {
+        return role;
     }
 }
