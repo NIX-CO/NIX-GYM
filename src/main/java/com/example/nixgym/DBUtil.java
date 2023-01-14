@@ -16,7 +16,7 @@ public final class DBUtil {
         }
     }
 
-    private final static String url="jdbc:mysql://localhost:3306/test";
+    private final static String url="jdbc:mysql://localhost:3306/nixgym";
     private final static String user="root";
     private final static String password="";
 
